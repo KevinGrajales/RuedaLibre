@@ -1,0 +1,48 @@
+
+
+
+
+/* Configuración general de la página */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+/* Organiza la página verticalmente */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenido principal ocupa el espacio disponible */
+main {
+    flex: 1;
+}
+
+/* Pie de página */
+footer {
+    background-color: #142b41;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+
+
+/*  tablas de tarifas  */
+    table {
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+    }
