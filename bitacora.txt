@@ -1,0 +1,60 @@
+
+Bitácora Rueda Libre.
+
+3/10/2026
+
+La organización de los archivos de Rueda Libre permite separar la estructura, la presentación y el comportamiento del sitio web.
+
+HTML organiza el contenido, CSS define su apariencia y JavaScript puede utilizarse para incorporar funcionalidades interactivas.
+
+TABLA DE RUTAS:
+
+Recurso de origen: index.html
+Recurso de destino: CSS/styles.css
+Ruta relativa: CSS/styles.css
+Descripción: Permite conectar la página principal con la hoja de estilos.
+
+Recurso de origen: Paginas/tarifas.html
+Recurso de destino: CSS/styles.css
+Ruta relativa: ../CSS/styles.css
+Descripción: Permite conectar la página de tarifas con la hoja de estilos ubicada en la carpeta principal.
+
+Recurso de origen: Paginas/reservas.html
+Recurso de destino: CSS/styles.css
+Ruta relativa: ../CSS/styles.css
+Descripción: Permite conectar la página de reservas con la hoja de estilos ubicada en la carpeta principal.
+
+Recurso de origen: index.html
+Recurso de destino: Paginas/tarifas.html
+Ruta relativa: Paginas/tarifas.html
+Descripción: Permite navegar desde la página principal hasta la página de tarifas.
+
+Recurso de origen: index.html
+Recurso de destino: Paginas/reservas.html
+Ruta relativa: Paginas/reservas.html
+Descripción: Permite navegar desde la página principal hasta la página de reservas.
+
+Recurso de origen: Paginas/tarifas.html
+Recurso de destino: Paginas/reservas.html
+Ruta relativa: reservas.html
+Descripción: Permite navegar desde la página de tarifas hasta la página de reservas, siempre que ambas páginas estén dentro de la carpeta Paginas.
+
+Recurso de origen: Paginas/reservas.html
+Recurso de destino: Paginas/tarifas.html
+Ruta relativa: tarifas.html
+Descripción: Permite navegar desde la página de reservas hasta la página de tarifas, siempre que ambas páginas estén dentro de la carpeta Paginas.
+
+
+ANÁLISIS DE LA PETICIÓN HTTP.
+
+URL completa: http://127.0.0.1:5500/index.html
+Protocolo:http
+Host: 127.0.0.1
+Puerto: 5500
+Ruta: /index.html
+
+Request URL: http://127.0.0.1:5500/index.html
+Request method:  GET
+Status code: 200 OK
+Remote address: 127.0.0.1:5500
+Referrer policy: strict-origin-when-cross-origin
