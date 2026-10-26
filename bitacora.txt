@@ -322,4 +322,19 @@ Rueda Libre version v0.2:
 
 - Publiqué el sitio en GitHub pages.
 - URL : https://kevingrajales.github.io/RuedaLibre/
-- 
+
+
+
+Identidad visual de Rueda Libre:
+
+/* Colores de marca */
+    --verde-ruta: #1E7A4F;
+    --naranja-pedal: #F39A2B;
+    --azul-noche: #14213D;
+    --crema: #FAF6EF;
+    --gris-asfalto: #5B6470;
+
+    /* Tipografías */
+    --fuente-titulos: 'Montserrat', Arial, sans-serif;
+    --fuente-texto: 'Open Sans', Arial, sans-serif;
+

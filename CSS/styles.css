@@ -22,7 +22,7 @@
 
 
 
-/* Configuración general de la página */
+
 /* Configuración general de la página */
 html,
 body {
@@ -57,7 +57,7 @@ h6 {
 main {
     flex: 1;
 }
-/* Pie de página */
+
 /* Pie de página */
 footer {
     background-color: var(--azul-noche);
@@ -73,7 +73,7 @@ footer p {
 
 
 
-/* Tablas de tarifas y recorridos */
+
 /* Tablas de tarifas y recorridos */
 table {
     width: 100%;
@@ -110,4 +110,29 @@ table tbody tr:nth-child(even) {
 /* Resaltar las filas al pasar el cursor */
 table tbody tr:hover {
     background-color: #E0E9E3;
+}
+
+/* Campos del formulario */
+input,
+select,
+textarea,
+button {
+    font: inherit;
+}
+
+/* Foco visible en campos y controles */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--verde-ruta);
+    outline-offset: 3px;
+    border-color: var(--azul-noche);
+}
+
+/* Foco de las casillas de verificación */
+input[type="checkbox"]:focus-visible,
+input[type="radio"]:focus-visible {
+    outline: 3px solid var(--verde-ruta);
+    outline-offset: 3px;
 }
