@@ -36,6 +36,7 @@
                 <fieldset>
                     <legend>Tus datos</legend>
 
+                <div class="grupo-formulario">
                     <label for="nombre">Nombre completo:</label>
                     <input
                         type="text"
@@ -44,29 +45,34 @@
                         minlength="3"
                         required
                     >
+                </div>
 
                     <br><br>
 
-                    <label for="documento">Documento de identidad:</label>
-                    <input
-                        type="text"
-                        id="documento"
-                        name="documento"
-                        inputmode="numeric"
-                        pattern="[0-9]{6,10}"
-                        title="Ingresa únicamente números, entre 6 y 10 dígitos."
-                        required
-                    >
+                    <div class="grupo-formulario">
+                        <label for="documento">Documento de identidad:</label>
+                        <input
+                            type="text"
+                            id="documento"
+                            name="documento"
+                            inputmode="numeric"
+                            pattern="[0-9]{6,10}"
+                            title="Ingresa únicamente números, entre 6 y 10 dígitos."
+                            required
+                        >
+                    </div>
 
                     <br><br>
 
-                    <label for="correo">Correo electrónico:</label>
-                    <input
-                        type="email"
-                        id="correo"
-                        name="correo"
-                        required
-                    >
+                    <div class="grupo-formulario">
+                        <label for="correo">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            required
+                        >
+                    </div>
 
                     <br><br>
 
@@ -87,47 +93,54 @@
                 <fieldset>
                     <legend>Tu alquiler</legend>
 
-                    <label for="fecha">Fecha del alquiler:</label>
-                    <input
-                        type="date"
-                        id="fecha"
-                        name="fecha"
-                        min="2026-11-01"
-                        max="2026-12-31"
-                        required
-                    >
+                    <div class="grupo-formulario">
+                        <label for="fecha">Fecha del alquiler:</label>
+                        <input
+                            type="date"
+                            id="fecha"
+                            name="fecha"
+                            min="2026-11-01"
+                            max="2026-12-31"
+                            required
+                        >
+                    </div>
 
                     <br><br>
 
-                    <label for="bicicleta">Tipo de bicicleta:</label>
-                    <select id="bicicleta" name="bicicleta" required>
-                        <option value="">Selecciona una bicicleta</option>
-                        <option value="urbana">Bicicleta urbana</option>
-                        <option value="montana">Bicicleta de montaña</option>
-                        <option value="electrica">Bicicleta eléctrica</option>
-                    </select>
+                    <div class="grupo-formulario">
+                        <label for="bicicleta">Tipo de bicicleta:</label>
+                        <select id="bicicleta" name="bicicleta" required>
+                            <option value="">Selecciona una bicicleta</option>
+                            <option value="urbana">Bicicleta urbana</option>
+                            <option value="montana">Bicicleta de montaña</option>
+                            <option value="electrica">Bicicleta eléctrica</option>
+                        </select>
+                    </div>
 
                     <br><br>
 
-                    <label for="plan">Plan de alquiler:</label>
-                    <select id="plan" name="plan" required>
-                        <option value="">Selecciona un plan</option>
-                        <option value="1_hora">1 hora</option>
-                        <option value="medio_dia">Medio día (4 horas)</option>
-                        <option value="dia_completo">Día completo (8 horas)</option>
-                    </select>
+                    <div class="grupo-formulario">
+                        <label for="plan">Plan de alquiler:</label>
+                        <select id="plan" name="plan" required>
+                            <option value="">Selecciona un plan</option>
+                            <option value="1_hora">1 hora</option>
+                            <option value="medio_dia">Medio día (4 horas)</option>
+                            <option value="dia_completo">Día completo (8 horas)</option>
+                        </select>
+                    </div>
 
                     <br><br>
 
-                    <label for="cantidad">Cantidad de bicicletas:</label>
-                    <input
-                        type="number"
-                        id="cantidad"
-                        name="cantidad"
-                        min="1"
-                        max="6"
-                        step="1"
-                        required
+                    <div class="grupo-formulario">
+                        <label for="cantidad">Cantidad de bicicletas:</label>
+                        <input
+                            type="number"
+                            id="cantidad"
+                            name="cantidad"
+                            min="1"
+                            max="6"
+                            step="1"
+                            required
                     >
                 </fieldset>
 

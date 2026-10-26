@@ -338,3 +338,13 @@ Identidad visual de Rueda Libre:
     --fuente-titulos: 'Montserrat', Arial, sans-serif;
     --fuente-texto: 'Open Sans', Arial, sans-serif;
 
+
+CONFIGURACIÓN DEL MODELO DE CAJA.
+
+Se verificó la presentación de las tarjetas, las imágenes, las tablas, el formulario y el menú de navegación.
+
+También se comprobó el comportamiento visual de los elementos interactivos y se revisó que las validaciones del formulario continuaran funcionando después de los cambios de estilos.
+
+RESULTADO:
+Se mejoró la distribución visual del sitio Rueda Libre, se organizó el contenido mediante un modelo de caja consistente y se mantuvieron las validaciones del formulario.    
+
