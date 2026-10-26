@@ -26,93 +26,140 @@
         <section>
              <h1>Formulario de reserva</h1>
 
-                <form action="#" method="post">
+                        <form action="#" method="post">
 
-            <fieldset>
-                <legend>Tus datos</legend>
+                <fieldset>
+                    <legend>Tus datos</legend>
 
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                    <label for="nombre">Nombre completo:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        minlength="3"
+                        required
+                    >
 
-                <br><br>
+                    <br><br>
 
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
+                    <label for="documento">Documento de identidad:</label>
+                    <input
+                        type="text"
+                        id="documento"
+                        name="documento"
+                        inputmode="numeric"
+                        pattern="[0-9]{6,10}"
+                        title="Ingresa únicamente números, entre 6 y 10 dígitos."
+                        required
+                    >
 
-                <br><br>
+                    <br><br>
 
-                <label for="telefono">Número de teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-            </fieldset>
+                    <label for="correo">Correo electrónico:</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        required
+                    >
 
-            <br>
+                    <br><br>
 
-            <fieldset>
-                <legend>Tu alquiler</legend>
-
-                <label for="bicicleta">Tipo de bicicleta:</label>
-                <select id="bicicleta" name="bicicleta" required>
-                    <option value="">Selecciona una bicicleta</option>
-                    <option value="urbana">Bicicleta urbana</option>
-                    <option value="montana">Bicicleta de montaña</option>
-                    <option value="electrica">Bicicleta eléctrica</option>
-                </select>
-
-                <br><br>
-
-                <label for="fecha">Fecha de reserva:</label>
-                <input type="date" id="fecha" name="fecha" required>
-
-                <br><br>
-
-                <label for="duracion">Duración del alquiler:</label>
-                <select id="duracion" name="duracion" required>
-                    <option value="">Selecciona la duración</option>
-                    <option value="1_hora">1 hora</option>
-                    <option value="3_horas">3 horas</option>
-                    <option value="6_horas">6 horas</option>
-                    <option value="dia_completo">Día completo</option>
-                </select>
-            </fieldset>
-
-            <br>
-
-            <fieldset>
-                <legend>Confirmación</legend>
-
-                <p>¿Cómo deseas recibir información sobre tu reserva?</p>
-
-                <input type="radio" id="contacto_correo"
-                    name="medio_contacto" value="correo" required>
-                <label for="contacto_correo">Correo electrónico</label>
+                    <label for="celular">Celular:</label>
+                    <input
+                        type="tel"
+                        id="celular"
+                        name="celular"
+                        inputmode="numeric"
+                        pattern="3[0-9]{9}"
+                        title="Ingresa un celular de 10 dígitos que comience por 3."
+                        required
+                    >
+                </fieldset>
 
                 <br>
 
-                <input type="radio" id="contacto_telefono"
-                    name="medio_contacto" value="telefono">
-                <label for="contacto_telefono">Teléfono</label>
+                <fieldset>
+                    <legend>Tu alquiler</legend>
 
-                <br><br>
+                    <label for="fecha">Fecha del alquiler:</label>
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        min="2026-11-01"
+                        max="2026-12-31"
+                        required
+                    >
 
-                <label for="observaciones">Observaciones adicionales:</label>
+                    <br><br>
+
+                    <label for="bicicleta">Tipo de bicicleta:</label>
+                    <select id="bicicleta" name="bicicleta" required>
+                        <option value="">Selecciona una bicicleta</option>
+                        <option value="urbana">Bicicleta urbana</option>
+                        <option value="montana">Bicicleta de montaña</option>
+                        <option value="electrica">Bicicleta eléctrica</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="plan">Plan de alquiler:</label>
+                    <select id="plan" name="plan" required>
+                        <option value="">Selecciona un plan</option>
+                        <option value="1_hora">1 hora</option>
+                        <option value="medio_dia">Medio día (4 horas)</option>
+                        <option value="dia_completo">Día completo (8 horas)</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="cantidad">Cantidad de bicicletas:</label>
+                    <input
+                        type="number"
+                        id="cantidad"
+                        name="cantidad"
+                        min="1"
+                        max="6"
+                        step="1"
+                        required
+                    >
+                </fieldset>
+
                 <br>
-                <textarea id="observaciones" name="observaciones"
-                        rows="4" cols="40"></textarea>
 
-                <br><br>
+                <fieldset>
+                    <legend>Confirmación</legend>
 
-                <input type="checkbox" id="aceptar" name="aceptar"
-                    value="si" required>
-                <label for="aceptar">
-                    Confirmo que los datos proporcionados son correctos.
-                </label>
-            </fieldset>
+                    <label for="comentarios">Comentarios (opcional):</label>
+                    <br>
+                    <textarea
+                        id="comentarios"
+                        name="comentarios"
+                        rows="4"
+                        cols="40"
+                        maxlength="300"
+                    ></textarea>
 
-            <br>
+                    <br><br>
 
-            <button type="submit">Enviar reserva</button>
+                    <input
+                        type="checkbox"
+                        id="politicas"
+                        name="politicas"
+                        value="aceptadas"
+                        required
+                    >
+                    <label for="politicas">
+                        Acepto las políticas de alquiler.
+                    </label>
+                </fieldset>
 
-        </form>
+                <br>
+
+                <button type="submit">Enviar reserva</button>
+
+            </form>
     </section>
 
         <aside>
