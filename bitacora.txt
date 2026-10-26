@@ -215,3 +215,34 @@ Referrer policy: strict-origin-when-cross-origin
 |  * Información de contacto                       |
 |  * Derechos reservados                           |
 +--------------------------------------------------+
+
+
+* FORMULARIO DE RESERVA — reservas.html
+
+* Se creó una sección denominada "Formulario de reserva" dentro del contenido principal de la página.
+
+* El formulario utiliza el método POST para enviar los datos y está organizado en tres grupos mediante las etiquetas FIELDSET y LEGEND:
+
+    * Tus datos: contiene el nombre completo, el correo electrónico y el teléfono del cliente.
+    * Tu alquiler: contiene el tipo de bicicleta, la fecha de reserva y la duración del alquiler.
+    * Confirmación: contiene el medio de contacto preferido, las observaciones adicionales y una casilla de confirmación de los datos.
+
+* JUSTIFICACIÓN DE LOS CONTROLES:
+
+    1. Correo electrónico (input type="email"): se eligió porque permite introducir una dirección de correo y proporciona una validación básica de su formato.
+
+    2. Tipo de bicicleta (select): se eligió porque el cliente debe seleccionar una bicicleta entre varias opciones predefinidas, lo que facilita la selección y evita respuestas arbitrarias.
+
+    3. Medio de contacto (input type="radio"): se eligió porque el cliente debe seleccionar una sola alternativa entre las opciones disponibles.
+
+* ASOCIACIÓN DE ETIQUETAS Y CONTROLES:
+
+    Cada control tiene una etiqueta visible mediante LABEL. El atributo FOR de cada etiqueta coincide con el ID del control correspondiente, de modo que al hacer clic en la etiqueta se activa el campo asociado.
+
+* ENVÍO DEL FORMULARIO:
+
+    Se asignó un atributo NAME a cada control que debe enviar datos. El formulario utiliza METHOD="post" y contiene un botón final de tipo SUBMIT denominado "Enviar reserva".
+
+* PRUEBAS:
+
+    Se verificó que las etiquetas activaran sus campos correspondientes y que los controles fueran utilizables. El formulario es una demostración de HTML y no procesa ni almacena reservas en un servidor.

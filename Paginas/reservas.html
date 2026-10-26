@@ -10,33 +10,110 @@
 </head>
 <body>
 
-    <header>
+   <header>
+    <h1>Rueda Libre</h1>
 
-    <nav>
+    <nav aria-label="Navegación principal">
         <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="tarifas.html">Tarifas</a></li>
             <li><a href="reservas.html">Reservas</a></li>
         </ul>
     </nav>
-
-    </header>
+</header>
 
     <main>
-            <section>
-                <h2>Formulario de reservas</h2>
+        <section>
+             <h1>Formulario de reserva</h1>
 
-                
-                <form>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
+                <form action="#" method="post">
 
-                    <label for="fecha">Fecha de reserva:</label>
-                    <input type="date" id="fecha" name="fecha">
+            <fieldset>
+                <legend>Tus datos</legend>
 
-                    <button type="submit">Reservar</button>
-                </form>
-             </section>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <br><br>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <br><br>
+
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Tu alquiler</legend>
+
+                <label for="bicicleta">Tipo de bicicleta:</label>
+                <select id="bicicleta" name="bicicleta" required>
+                    <option value="">Selecciona una bicicleta</option>
+                    <option value="urbana">Bicicleta urbana</option>
+                    <option value="montana">Bicicleta de montaña</option>
+                    <option value="electrica">Bicicleta eléctrica</option>
+                </select>
+
+                <br><br>
+
+                <label for="fecha">Fecha de reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <br><br>
+
+                <label for="duracion">Duración del alquiler:</label>
+                <select id="duracion" name="duracion" required>
+                    <option value="">Selecciona la duración</option>
+                    <option value="1_hora">1 hora</option>
+                    <option value="3_horas">3 horas</option>
+                    <option value="6_horas">6 horas</option>
+                    <option value="dia_completo">Día completo</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Confirmación</legend>
+
+                <p>¿Cómo deseas recibir información sobre tu reserva?</p>
+
+                <input type="radio" id="contacto_correo"
+                    name="medio_contacto" value="correo" required>
+                <label for="contacto_correo">Correo electrónico</label>
+
+                <br>
+
+                <input type="radio" id="contacto_telefono"
+                    name="medio_contacto" value="telefono">
+                <label for="contacto_telefono">Teléfono</label>
+
+                <br><br>
+
+                <label for="observaciones">Observaciones adicionales:</label>
+                <br>
+                <textarea id="observaciones" name="observaciones"
+                        rows="4" cols="40"></textarea>
+
+                <br><br>
+
+                <input type="checkbox" id="aceptar" name="aceptar"
+                    value="si" required>
+                <label for="aceptar">
+                    Confirmo que los datos proporcionados son correctos.
+                </label>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Enviar reserva</button>
+
+        </form>
+    </section>
 
         <aside>
             <h2>Horario de atención</h2>
