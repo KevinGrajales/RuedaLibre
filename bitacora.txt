@@ -315,3 +315,11 @@ Se evita utilizar texto blanco sobre Naranja Pedal y texto Naranja Pedal sobre C
 La auditoría permite identificar problemas potenciales de accesibilidad y definir una distribución de colores que favorezca la legibilidad del sitio.
 
 La revisión final debe realizarse en las tres páginas, tanto en el entorno local como en la versión publicada, verificando imágenes, enlaces, navegación con teclado y estilos.
+
+
+
+Rueda Libre version v0.2:
+
+- Publiqué el sitio en GitHub pages.
+- URL : https://kevingrajales.github.io/RuedaLibre/
+- 
