@@ -36,13 +36,40 @@ footer p {
 
 
 
-/*  tablas de tarifas  */
-    table {
-        border: 2px solid black;
-        border-collapse: collapse;
-    }
+/* Tablas de tarifas y recorridos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 2px solid #14213D;
+    background-color: #FAF6EF;
+}
 
-    th, td {
-        border: 1px solid black;
-        padding: 10px;
-    }
+/* Encabezados de las tablas */
+table thead {
+    background-color: #14213D;
+    color: #FFFFFF;
+}
+
+table th {
+    border: 1px solid #14213D;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Celdas de las tablas */
+table td {
+    border: 1px solid #B8BEC5;
+    padding: 12px;
+    color: #14213D;
+}
+
+/* Alternar el fondo de las filas */
+table tbody tr:nth-child(even) {
+    background-color: #EAE5DC;
+}
+
+/* Resaltar las filas al pasar el cursor */
+table tbody tr:hover {
+    background-color: #E0E9E3;
+}

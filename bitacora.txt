@@ -246,3 +246,72 @@ Referrer policy: strict-origin-when-cross-origin
 * PRUEBAS:
 
     Se verificó que las etiquetas activaran sus campos correspondientes y que los controles fueran utilizables. El formulario es una demostración de HTML y no procesa ni almacena reservas en un servidor.
+
+
+
+    ============================================================
+AUDITORÍA DE ACCESIBILIDAD Y CONTRASTE
+PROYECTO: RUEDA LIBRE
+============================================================
+
+* 1. AUDITORÍA DE ACCESIBILIDAD
+
+Se revisaron las páginas index.html, Paginas/tarifas.html y Paginas/reservas.html.
+
+Aspectos evaluados:
+
+- Textos alternativos de las imágenes.
+- Jerarquía de encabezados.
+- Claridad de los textos de los enlaces.
+- Idioma declarado en el documento.
+- Recorrido completo mediante teclado.
+
+Correcciones previstas o realizadas:
+
+- Las imágenes informativas deben tener textos alternativos descriptivos.
+- Las imágenes decorativas deben utilizar alt="".
+- Los encabezados deben seguir una jerarquía lógica, utilizando h1 para el título principal, h2 para las secciones y h3 para los artículos cuando corresponda.
+- Los enlaces deben tener textos que permitan comprender su propósito.
+- Los tres documentos deben declarar el idioma español mediante lang="es".
+- Se debe comprobar que los enlaces y controles sean accesibles mediante Tab, Shift + Tab, Enter, las flechas y la barra espaciadora cuando corresponda.
+- Se debe comprobar que el indicador de foco del teclado sea claramente visible.
+
+* 2. AUDITORÍA DE CONTRASTE
+
+Se evaluaron las ocho combinaciones de colores propuestas por el cliente.
+
+Criterios utilizados:
+
+- Apto para texto normal: contraste igual o superior a 4.5:1.
+- Apto solo para texto grande: contraste igual o superior a 3:1 e inferior a 4.5:1.
+- No apto: contraste inferior a 3:1.
+
+Resultados:
+
+| Combinación | Contraste | Clasificación |
+| Blanco sobre Verde Ruta | 5.31:1 | Apto para texto normal |
+| Blanco sobre Naranja Pedal | 2.22:1 | No apto |
+| Azul Noche sobre Naranja Pedal | 7.20:1 | Apto para texto normal |
+| Azul Noche sobre Crema | 14.83:1 | Apto para texto normal |
+| Gris Asfalto sobre Crema | 5.57:1 | Apto para texto normal |
+| Verde Ruta sobre Crema | 4.93:1 | Apto para texto normal |
+| Naranja Pedal sobre Crema | 2.06:1 | No apto |
+| Blanco sobre Azul Noche | 15.97:1 | Apto para texto normal |
+
+* 3. MAPA DE USO DE COLOR
+
+- Fondo general: Crema (#FAF6EF).
+- Texto principal y encabezados: Azul Noche (#14213D).
+- Texto secundario: Gris Asfalto (#5B6470).
+- Botones principales: Verde Ruta (#1E7A4F) con texto blanco.
+- Botones secundarios: Naranja Pedal (#F39A2B) con texto Azul Noche.
+- Enlaces sobre fondo crema: Verde Ruta (#1E7A4F).
+- Encabezados oscuros: Azul Noche (#14213D) con texto blanco.
+
+Se evita utilizar texto blanco sobre Naranja Pedal y texto Naranja Pedal sobre Crema, debido a que estas combinaciones no alcanzan el contraste mínimo de 3:1 para texto.
+
+* 4. CONCLUSIÓN
+
+La auditoría permite identificar problemas potenciales de accesibilidad y definir una distribución de colores que favorezca la legibilidad del sitio.
+
+La revisión final debe realizarse en las tres páginas, tanto en el entorno local como en la versión publicada, verificando imágenes, enlaces, navegación con teclado y estilos.
