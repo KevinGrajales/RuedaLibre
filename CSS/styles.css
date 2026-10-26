@@ -1,67 +1,105 @@
 
+/* Identidad visual de Rueda Libre */
+:root {
+    /* Colores de marca */
+    --verde-ruta: #1E7A4F;
+    --naranja-pedal: #F39A2B;
+    --azul-noche: #14213D;
+    --crema: #FAF6EF;
+    --gris-asfalto: #5B6470;
+
+    /* Tipografías */
+    --fuente-titulos: 'Montserrat', Arial, sans-serif;
+    --fuente-texto: 'Open Sans', Arial, sans-serif;
+
+    /* Espaciados */
+    --espacio-xs: 0.5rem;
+    --espacio-sm: 1rem;
+    --espacio-md: 1.5rem;
+    --espacio-lg: 2rem;
+    --espacio-xl: 3rem;
+}
 
 
 
 /* Configuración general de la página */
-html, body {
+/* Configuración general de la página */
+html,
+body {
     margin: 0;
     padding: 0;
     min-height: 100%;
 }
 
-/* Organiza la página verticalmente */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    /* Identidad visual */
+    font-family: var(--fuente-texto);
+    color: var(--azul-noche);
+    background-color: var(--crema);
+}
+
+/* Tipografía para todos los encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
 }
 
 /* El contenido principal ocupa el espacio disponible */
 main {
     flex: 1;
 }
-
+/* Pie de página */
 /* Pie de página */
 footer {
-    background-color: #142b41;
-    color: white;
+    background-color: var(--azul-noche);
+    color: #FFFFFF;
     text-align: center;
-    padding: 20px;
+    padding: var(--espacio-md);
     margin-top: auto;
 }
 
 footer p {
-    margin: 8px 0;
+    margin: var(--espacio-xs) 0;
 }
 
 
 
 /* Tablas de tarifas y recorridos */
+/* Tablas de tarifas y recorridos */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
-    border: 2px solid #14213D;
-    background-color: #FAF6EF;
+    margin: var(--espacio-md) 0;
+    border: 2px solid var(--azul-noche);
+    background-color: var(--crema);
 }
 
 /* Encabezados de las tablas */
 table thead {
-    background-color: #14213D;
+    background-color: var(--azul-noche);
     color: #FFFFFF;
 }
 
 table th {
-    border: 1px solid #14213D;
-    padding: 12px;
+    border: 1px solid var(--azul-noche);
+    padding: var(--espacio-sm);
     text-align: left;
 }
 
 /* Celdas de las tablas */
 table td {
     border: 1px solid #B8BEC5;
-    padding: 12px;
-    color: #14213D;
+    padding: var(--espacio-sm);
+    color: var(--azul-noche);
 }
 
 /* Alternar el fondo de las filas */
