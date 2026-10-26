@@ -91,14 +91,30 @@ h6 {
     gap: var(--espacio-md);
 }
 
-/* Tarjeta individual */
+/* Tarjetas de Servicios */
+
 .tarjeta {
+    position: relative;
     flex: 1 1 16rem;
     min-width: 0;
     padding: var(--espacio-md);
     border: 1px solid var(--gris-asfalto);
     border-radius: 0.75rem;
     background-color: var(--crema);
+}
+
+.etiqueta-nuevo {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 1;
+    padding: 0.35rem 0.65rem;
+    background-color: var(--naranja-pedal);
+    color: var(--azul-noche);
+    font-family: var(--fuente-titulos);
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 0.35rem;
 }
 
 /* Imagen de la tarjeta */
@@ -113,11 +129,11 @@ h6 {
 /* El contenido principal ocupa el espacio disponible */
 main {
     flex: 1;
-     width: 100%;
+    width: 100%;
     max-width: 75rem;
     margin-inline: auto;
     padding: var(--espacio-md);
-
+    padding-bottom: 5rem;
 }
 
 /* Pie de página */
@@ -261,5 +277,43 @@ form button[type="submit"]:hover {
 /* Foco visible al navegar con el teclado */
 form button[type="submit"]:focus-visible {
     outline: 3px solid var(--verde-ruta);
+    outline-offset: 4px;
+}
+
+/* BOTÓN FLOTANTE DE WHATSAPP */
+   
+.whatsapp-flotante {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 1000;
+
+    display: inline-block;
+    padding: 0.85rem 1.25rem;
+
+    background-color: var(--verde-ruta);
+    color: #FFFFFF;
+
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    text-decoration: none;
+
+    border: 2px solid var(--verde-ruta);
+    border-radius: 999px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.whatsapp-flotante:hover {
+    background-color: var(--naranja-pedal);
+    border-color: var(--naranja-pedal);
+    color: var(--azul-noche);
+}
+
+.whatsapp-flotante:focus-visible {
+    outline: 3px solid var(--azul-noche);
     outline-offset: 4px;
 }

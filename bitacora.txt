@@ -348,3 +348,46 @@ También se comprobó el comportamiento visual de los elementos interactivos y s
 RESULTADO:
 Se mejoró la distribución visual del sitio Rueda Libre, se organizó el contenido mediante un modelo de caja consistente y se mantuvieron las validaciones del formulario.    
 
+
+
+## Cierre de la semana: Proyecto Rueda Libre
+
+### 1. Resumen de los MiniRetos
+
+- Construí la estructura inicial del sitio web Rueda Libre utilizando HTML semántico. Organicé el contenido en encabezados, navegación, secciones principales y pie de página, procurando que cada elemento cumpliera una función clara dentro de la página.
+
+- Desarrollé las páginas Inicio, Tarifas y Reservas. Configuré los enlaces entre ellas y revisé las rutas relativas de los recursos para facilitar la navegación dentro del proyecto.
+
+- Organicé los estilos utilizando una paleta de colores, tipografías y variables reutilizables. Trabajé en la presentación del encabezado, el menú, las tarjetas de servicios, las tablas y los formularios, buscando mantener una identidad visual coherente.
+
+- Implementé un formulario de reservas con campos para los datos del cliente y las características del alquiler. Utilicé atributos de validación HTML y revisé aspectos de accesibilidad, como las etiquetas de los campos, los estados de foco y la navegación mediante teclado.
+
+- Apliqué `box-sizing: border-box` para controlar el cálculo de las dimensiones de los elementos. Ajusté el ancho máximo del contenido, la distribución de las tarjetas, el espaciado de los formularios y la presentación de las tablas. También revisé las dimensiones de las tarjetas mediante las herramientas de desarrollo del navegador.
+
+- Realicé los ajustes finales del diseño, incorporé la etiqueta «Nuevo» al servicio de bicicletas eléctricas y agregué un enlace flotante de WhatsApp. Finalmente, revisé la consistencia entre las páginas, preparé la versión de lanzamiento y comprobé el funcionamiento del sitio publicado.
+
+
+### 2. ¿Qué construí durante la semana?
+
+Durante esta semana desarrollé un sitio web para Rueda Libre, un servicio de alquiler de bicicletas. El proyecto integra una página de inicio para presentar el negocio, una página de tarifas para mostrar los planes disponibles y una página de reservas con un formulario para recopilar la información necesaria del cliente.
+
+Durante el proceso practiqué la estructuración semántica de HTML, la organización de estilos con CSS, el uso de selectores, la creación de diseños reutilizables, las validaciones de formularios y el control de versiones con Git y GitHub. También trabajé en la publicación del sitio mediante GitHub Pages.
+
+### 3. ¿Qué mejoraría del proyecto?
+
+En futuras versiones mejoraría los siguientes aspectos:
+
+- Implementaría un sistema de reservas funcional conectado a un backend y una base de datos.
+- Añadiría confirmaciones de reserva y mecanismos para verificar la disponibilidad de las bicicletas.
+- Mejoraría las pruebas en diferentes tamaños de pantalla y dispositivos.
+- Continuaría revisando la accesibilidad, el contraste de colores y la navegación mediante teclado.
+- Optimizaría las imágenes y revisaría el rendimiento de carga.
+- Ampliaría las pruebas de los formularios y de los enlaces internos y externos.
+
+### 4. Reflexión final
+
+El desarrollo de Rueda Libre me permitió integrar los conocimientos de HTML, CSS y Git en un proyecto práctico. Comprendí la importancia de organizar el código, reutilizar estilos, validar la información ingresada por los usuarios y comprobar el funcionamiento del sitio antes de publicarlo.
+
+También aprendí que finalizar una página web no consiste únicamente en conseguir que se vea bien: es necesario verificar su accesibilidad, corregir errores, revisar su comportamiento en distintos dispositivos y mantener una estructura de código que facilite futuras modificaciones.
+
+Como siguiente paso, buscaría convertir el prototipo en una aplicación funcional que permita consultar la disponibilidad de bicicletas y gestionar las reservas de manera real.
