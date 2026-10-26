@@ -391,3 +391,8 @@ El desarrollo de Rueda Libre me permitió integrar los conocimientos de HTML, CS
 También aprendí que finalizar una página web no consiste únicamente en conseguir que se vea bien: es necesario verificar su accesibilidad, corregir errores, revisar su comportamiento en distintos dispositivos y mantener una estructura de código que facilite futuras modificaciones.
 
 Como siguiente paso, buscaría convertir el prototipo en una aplicación funcional que permita consultar la disponibilidad de bicicletas y gestionar las reservas de manera real.
+
+
+26/10/26.
+
+Cuando se reduce la ventana de navegacion de la pagina, el codigo se sigue evidenciado completo, solo que cambia de tamaño
