@@ -89,21 +89,27 @@ h6 {
 }
 
 .encabezado {
-   
+    min-height: 650px;
+
+    background-image: url("../img/Portada-fondo.png");
+    background-size: cover;
+    background-position: center;
+
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: var(--espacio-md);
-    padding: var(--espacio-md);
+
+    color: white;
+    gap: var(--espacio-sm);
+    padding: var(--espacio-xl);
 }
 
 
 #menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: var(--espacio-sm);
     list-style: none;
@@ -114,7 +120,7 @@ h6 {
 #menu a {
     display: inline-block;
     padding: var(--espacio-xs) var(--espacio-md);
-    color: var(--azul-noche);
+    color: var(--crema);
     font-family: var(--fuente-texto);
     font-weight: 600;
     text-decoration: none;
@@ -140,6 +146,11 @@ h6 {
 #menu a:focus-visible {
     outline: 3px solid var(--naranja-pedal);
     outline-offset: 3px;
+}
+
+.marca img {
+    width: 420px;
+    height: auto;
 }
 
 /* Contenedor de las tarjetas */
