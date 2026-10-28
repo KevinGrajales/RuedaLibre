@@ -84,24 +84,62 @@ h6 {
     margin-bottom: var(--espacio-xl);
 }
 
+.portada a {
+    color: var(--verde-ruta);
+}
+
 .encabezado {
+   
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: var(--espacio-md);
     padding: var(--espacio-md);
 }
+
 
 #menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: var(--espacio-md);
+    gap: var(--espacio-sm);
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: var(--espacio-xs);
+}
+
+#menu a {
+    display: inline-block;
+    padding: var(--espacio-xs) var(--espacio-md);
+    color: var(--azul-noche);
+    font-family: var(--fuente-texto);
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+#menu a.activo {
+    background-color: var(--verde-ruta);
+    color: #FFFFFF;
+    border-color: var(--verde-ruta);
+}
+
+#menu a:hover {
+    background-color: var(--naranja-pedal);
+    color: var(--azul-noche);
+    border-color: var(--naranja-pedal);
+}
+
+#menu a:focus-visible {
+    outline: 3px solid var(--naranja-pedal);
+    outline-offset: 3px;
 }
 
 /* Contenedor de las tarjetas */
@@ -109,6 +147,12 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     gap: var(--espacio-md);
+}
+
+.contenedor-flota {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
 }
 
 /* Tarjetas de Servicios */
@@ -121,6 +165,60 @@ h6 {
     border: 1px solid var(--gris-asfalto);
     border-radius: 0.75rem;
     background-color: var(--crema);
+}
+
+.cuadricula-flota {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: var(--espacio-md);
+}
+
+.tarjeta-bicicleta {
+    display: flex;
+    flex-direction: column;
+    padding: var(--espacio-md);
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 0.75rem;
+    background-color: var(--crema);
+}
+
+.tarjeta-bicicleta img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+}
+
+.tarjeta-bicicleta h3 {
+    margin-bottom: var(--espacio-xs);
+}
+
+.tarjeta-bicicleta p {
+    margin-bottom: var(--espacio-sm);
+}
+
+.tarjeta-bicicleta .precio {
+    font-weight: 700;
+    color: var(--verde-ruta);
+}
+
+.tarjeta-bicicleta .enlace-reservar {
+    margin-top: auto;
+    display: inline-block;
+    padding: var(--espacio-xs) var(--espacio-sm);
+    background-color: var(--verde-ruta);
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 0.4rem;
+}
+
+.tarjeta-bicicleta .enlace-reservar:hover {
+    background-color: var(--naranja-pedal);
+    color: var(--azul-noche);
 }
 
 .etiqueta-nuevo {
@@ -139,11 +237,12 @@ h6 {
 
 /* Imagen de la tarjeta */
 .tarjeta img {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 180px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #FFFFFF;
     border-radius: 0.5rem;
-    margin-bottom: var(--espacio-sm);
 }
 
 /* El contenido principal ocupa el espacio disponible */

@@ -395,4 +395,29 @@ Como siguiente paso, buscaría convertir el prototipo en una aplicación funcion
 
 26/10/26.
 
-Cuando se reduce la ventana de navegacion de la pagina, el codigo se sigue evidenciado completo, solo que cambia de tamaño
+Cuando se reduce la ventana de navegacion de la pagina, el codigo se sigue evidenciado completo, solo que cambia de tamaño pero cada detalle se ve a la perfeccion.
+
+
+28/10/26
+
+En este minireto agregué una nueva sección utilizando cuadricula grip que permite separar las tarjetas de elementos dependiendo del ancho de la
+pantalla y maneja el diseño responsive.
+ 
+
+Prueba de adaptación.
+
+
+
+Ancho de ventana    Columnas observadas
+
+                    
+1280 px                     5
+
+
+
+900 px                      3
+
+
+
+500 px                      2
+
