@@ -421,3 +421,17 @@ Ancho de ventana    Columnas observadas
 
 500 px                      2
 
+
+
+30 / 10 /2026
+
+Registra en la bitácora, para cada caso (portada, galería, reservas, fila del formulario, encabezado y pie), 
+si usaste Flexbox o Grid y por qué. Haz commit y push.
+
+
+- En portada use grid para separar el contenido en 2 columas, a la izquierda el texto y a la derecha una imagen.
+- En Galeria use grid para separar las nuevas tarjetas y que estas quedaran en la misma fila con la mismas dimensiones.
+- En reservas Tambien use grid para separar las secciones en dos, dandole mayor proporcion a el formulario: 2fr 1fr.
+- En fila de usuario use flex box para poner los campos documentoy celular en la misma linea.
+- En el encabezado se uso flexbox para distribuir los elementos en en una misma dirección.
+- En pie de pagina tambien use flexbox para distribuir y alinear los elementos del pie de pagina.

@@ -72,17 +72,46 @@ h6 {
 /* Portada de inicio */
 .portada {
     min-height: 25vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    text-align: center;
+
+    gap: var(--espacio-lg);
     padding: var(--espacio-lg);
+
     background-color: var(--azul-noche);
     color: #FFFFFF;
+
     border-radius: 0.75rem;
     margin-bottom: var(--espacio-xl);
 }
+
+
+.portada-texto {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+.portada-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.portada-visual img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
 
 .portada a {
     color: var(--verde-ruta);
@@ -155,6 +184,7 @@ h6 {
 
 /* Contenedor de las tarjetas */
 .contenedor-tarjetas {
+
     display: flex;
     flex-wrap: wrap;
     gap: var(--espacio-md);
@@ -176,6 +206,12 @@ h6 {
     border: 1px solid var(--gris-asfalto);
     border-radius: 0.75rem;
     background-color: var(--crema);
+}
+
+.servicios {
+    margin-top: 4rem;
+    margin-bottom: var(--espacio-xl);
+
 }
 
 .cuadricula-flota {
@@ -256,6 +292,62 @@ h6 {
     border-radius: 0.5rem;
 }
 
+/* Sección Nuestras rutas */
+.seccion-rutas {
+    margin-top: 4rem;
+    margin-bottom: var(--espacio-xl);
+
+}
+
+.seccion-rutas h2 {
+    text-align: center;
+    margin-bottom: var(--espacio-lg);
+}
+
+/* Galería de tres tarjetas */
+.contenedor-rutas {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--espacio-md);
+}
+
+/* Tarjeta individual */
+.ruta {
+    display: flex;
+    flex-direction: column;
+
+    padding: var(--espacio-md);
+
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 0.75rem;
+
+    background-color: #FFFFFF;
+}
+
+/* Imagen de cada ruta */
+.ruta img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 0.5rem;
+}
+
+/* Nombre de la ruta */
+.ruta h3 {
+    margin-bottom: var(--espacio-xs);
+}
+
+/* Descripción de la ruta */
+.ruta p {
+    margin-top: 0;
+    color: var(--gris-asfalto);
+}
+
 /* El contenido principal ocupa el espacio disponible */
 main {
     flex: 1;
@@ -319,11 +411,33 @@ table tbody tr:hover {
     background-color: #E0E9E3;
 }
 
+/* Distribución de la página de reservas */
+.contenido-reservas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--espacio-lg);
+    align-items: start;
+}
+
+/* Columna del formulario */
+.formulario-reservas {
+    min-width: 0;
+}
+
+/* Información de contacto */
+.informacion-contacto {
+    margin-top: 6rem;
+    padding: var(--espacio-md);
+    background-color: #FFFFFF;
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 0.75rem;
+}
+
 /* Formulario de reservas */
 form {
     width: 100%;
-    max-width: 42rem;
-    margin: var(--espacio-lg) auto;
+    max-width: none;
+    margin: var(--espacio-md) 0;
 }
 
 /* Agrupación de campos */
@@ -338,6 +452,16 @@ form {
 .grupo-formulario label {
     font-weight: 600;
     color: var(--azul-noche);
+}
+
+.fila-campos {
+    display: flex;
+    gap: var(--espacio-md);
+}
+
+.fila-campos .grupo-formulario {
+    flex: 1;
+    min-width: 0;
 }
 
 /* Campos de entrada */
